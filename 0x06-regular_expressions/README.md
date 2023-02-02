@@ -3,7 +3,7 @@ Project done during Software Engineering program at ALX.
 It aims to learn about how to build regular expressions.
 
 ## Technologies
-* Python Scripts are written with Python 3
+* Scripts are written in Bash 5.2.15
 * Tested on Ubuntu 20.04 LTS
 
 ## Files
