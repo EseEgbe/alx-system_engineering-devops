@@ -13,7 +13,7 @@ Learning points in this project include:
 * What are the 2 signals that cannot be ignored
 
 ## Technologies
-* Python Scripts are written with Python 3
+* Scripts are written in Bash 5.2.15
 * Tested on Ubuntu 20.04 LTS
 
 ## Files
