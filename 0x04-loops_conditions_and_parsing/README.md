@@ -13,7 +13,7 @@ Learning points in this project include:
 * What are files and other comparison operators, and how to use them
 
 ## Technologies
-* Python Scripts are written with Python 3
+* Scripts are written in Bash 5.2.15
 * Tested on Ubuntu 20.04 LTS
 
 ## Files
