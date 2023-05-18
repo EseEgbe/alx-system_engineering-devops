@@ -1,4 +1,4 @@
-# Configures Nginx to serve the route /airbnb-onepage/ from AirBnB_clone_v2.
+#pp_server-nginx_config  4-reload_gunicorn_no_downtime  gunicorn.confqqqq Configures Nginx to serve the route /airbnb-onepage/ from AirBnB_clone_v2.
 
 server {
     # Listen on port 80
