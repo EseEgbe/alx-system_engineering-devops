@@ -3,12 +3,13 @@
 import requests
 
 def number_of_subscribers(subreddit):
-    """Function to query total subscribers on a given Reddit subreddit."""
-    headers = {'User-Agent': "linux:0x16.api.advanced:v1.0.0"}
-    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
+    """Return the total number of subscribers on a given subreddit."""
+    headers = {'User-Agent': 'CustomUserAgent/1.0'}
+    url = f'https://www.reddit.com/r/{subreddit}/about.json'
     response = requests.get(url, headers=headers, allow_redirects=False)
     
-    if response.status_code == 404:
+    if response.status_code == 200:
+        return response.json()['data']['subscribers']
+    else:
         return 0
-    results = response.json().get("data")
-    return results.get("subscribers")
+
