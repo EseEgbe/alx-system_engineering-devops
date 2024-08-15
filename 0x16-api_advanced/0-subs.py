@@ -7,16 +7,12 @@ import requests
 
 def number_of_subscribers(subreddit):
     """ Queries to Reddit API """
-    custom_user_agent = 'Mozilla/5.0'
-
-    headers = {
-        'User-Agent':custom_ user_agent
-    }
-
+    
+    headers = {'User-Agent': 'CustomUserAgent/1.0'}
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
     response = requests.get(url, headers=headers, allow_redirects=False)
     
-    if response.status_code == 200:
+    if response.status_code == 404:
         return response.json()['data']['subscribers']
     else:
         return 0
